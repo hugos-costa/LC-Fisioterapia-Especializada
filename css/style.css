@@ -1,10 +1,232 @@
 :root {
-    --cor-de-fundo: #F9F9F9;
-    --rosa-texto: #D67EAE;
-    --cor-de-fonte-branca: #FFFFFF;
-    
+    --cor-de-fundo-primaria: #C7D7C0;
+    --cor-de-fundo-secundaria: #8BB081;
+    --branco: #FFFFFF;
+    --vinho: #7B305C;
+    --verde: #316624;
+    --fonte-primaria: "Libre Baskerville", serif;
+    --fonte-secundaria: "Hanken Grotesk", sans-serif;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo-primaria);
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+/* Primeira sessão */
+
+.home {
+    padding:  1.25em;
+}
+
+.home-titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--vinho);
+    padding: 0.5em 0;
+}
+
+.highlight {
+    color: var(--verde);
+}
+
+.home-texto {
+    font-size: 0.8em;
+    padding: 0 1em 2em 1em;
+}
+
+.home-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.625em;
+    color: var(--branco);
+    background-color: var(--vinho);
+    border-radius: 25px;
+    padding: 1em;
+    width: 30%;
+}
+
+/* Segunda sessão */
+
+.second-section {
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 1em 1.875em;
+}
+
+.second-titulo {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    color: var(--vinho);
+    padding: 0 1em 1em 1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.second-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.second-texto {
+    font-size: 0.75em;
+    line-height: 16px;
+}
+
+/* Terceira sessão */
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1em 0;
+}
+
+.third-titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--verde);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.third-atendimento {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.third-atendimento:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.5px;
+    width: 80%;
+    background-color: var(--verde);
+}
+
+.third-botao {
+    border: 0.5px solid var(--verde);
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 45%;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125em;
+    font-weight: 700;
+    color: var(--vinho);
+}
+
+/* Quarta sessão */
+
+.fourth-section, .sixth-section {
+    background-color: var(--cor-de-fundo-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.fourth-titulo, .sixth-titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--vinho);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.fourth-detalhe, .sixth-detalhe {
+    width: 100%;
+    border: 0.5px solid var(--verde);
+    border-radius: 5px;
+}
+
+.fourth-detalhe[open], .sixth-detalhe[open] {
+    background: var(--verde);
+    color: var(--branco);
+    border: 0.5px solid var(--branco);
+}
+
+.fourth-sumarios {
+    font-family: var(--fonte-secundaria);
+    color: var(--vinho);
+    text-align: center;
+    padding: 0.5em 0;
+    list-style: none;
+}
+
+.fourth-detalhe[open] .fourth-sumarios,
+.sixth-detalhe[open] .sixth-sumarios {
+    color: var(--branco);
+    border-bottom: 0.5px solid;
+}
+
+.fourth-texto, .sixth-texto {
+    font-size: 0.75em;
+    padding: 1.5em;
+}
+
+/* Quinta sessão */
+
+.fifth-section {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.fifth-titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 0 3em 1em 3em;
+    color: var(--verde);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fifth-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1em;
+}
+
+.fifth-texto {
+    font-size: 0.75em;
+    line-height: 14px;
+    text-align: left;
+}
+
+/* Sexta sessão */
+
+.sixth-sumarios {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--fonte-secundaria);
+    color: var(--vinho);
+    text-align: center;
+    padding: 0.5em 0;
+    list-style: none;
+}
+
+.sixth-botao {
+    gap: 30px
+}
+
+.sixth-botao2 {
+    gap: 65px;
+}
+
+.sixth-icon {
+    padding-left: 5px;
 }
