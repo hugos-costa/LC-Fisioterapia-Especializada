@@ -312,7 +312,7 @@ body {
 
 .octave-section {
     background-color: var(--cor-de-fundo-secundaria);
-    padding: 1em 0.85em 2em 0.85em;
+    padding: 1em 0.7em 2em 0.7em;
 }
 
 .octave-container {
@@ -471,4 +471,18 @@ body {
 
 .git {
     width: 20px;
+}
+
+/* Desktop 1366px */
+
+@media screen and (min-width: 1024px) {
+
+    /* Primeira sessão */
+    .home img {
+        width: 200px;
+    }
+
+    .home {
+        padding:  5em;
+    }
 }
