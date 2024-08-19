@@ -14,6 +14,20 @@ body {
     text-align: center;
 }
 
+.body-contato {
+    height: 100%;
+    margin: 0;
+}
+
+.body-contato-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1em;
+}
+
 /* Primeira sessão */
 
 .home {
@@ -38,7 +52,8 @@ body {
     color: var(--vinho);
 }
 
-.home-link {
+.home-link,
+.octave-link {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -144,7 +159,9 @@ body {
     text-align: center;
 }
 
-.fourth-titulo, .sixth-titulo {
+.fourth-titulo,
+.sixth-titulo,
+.octave-titulo {
     font-family: var(--fonte-secundaria);
     font-size: 1.5em;
     font-weight: 700;
@@ -159,7 +176,8 @@ body {
     border-radius: 5px;
 }
 
-.fourth-detalhe[open], .sixth-detalhe[open] {
+.fourth-detalhe[open],
+.sixth-detalhe[open] {
     background: var(--verde);
     color: var(--branco);
     border: 0.5px solid var(--branco);
@@ -179,7 +197,8 @@ body {
     border-bottom: 0.5px solid;
 }
 
-.fourth-texto, .sixth-texto {
+.fourth-texto,
+.sixth-texto {
     font-size: 0.75em;
     padding: 1.5em;
 }
@@ -195,7 +214,7 @@ body {
     font-family: var(--fonte-secundaria);
     font-weight: 700;
     font-size: 1.5em;
-    padding: 0 3em 1em 3em;
+    padding: 0 3em;
     color: var(--verde);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -209,13 +228,8 @@ body {
 
 .fifth-texto {
     font-size: 0.75em;
-    line-height: 15px;
+    line-height: 16px;
     text-align: left;
-    /* width: 60%; */
-}
-
-.fifth-imagem {
-    /* width: 50%; */
 }
 
 /* Sexta sessão */
@@ -241,4 +255,220 @@ body {
 
 .sixth-icon {
     padding-left: 5px;
+}
+
+/* Sétima sessão */
+
+.seventh-section {
+    padding: 1em 2em;
+}
+
+.seventh-titulo,
+.ninth-titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--verde);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.seventh-carousel .seventh-container {
+    background-color: var(--branco);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 276px;
+    height: 196px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+}
+
+.seventh-container h3 {
+    font-weight: 700;
+}
+
+.seventh-container p {
+    font-size: 0.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slick-dots {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* Oitava sessão */
+
+.octave-section {
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 1em 0.85em 2em 0.85em;
+}
+
+.octave-container {
+    display: flex;
+    gap: 5px;
+    padding: 1em 0;
+}
+
+.octave-lista {
+    text-align: left;
+}
+
+.octave-lista li {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+/* Nona sessão */
+
+.ninth-section {
+    padding: 0 1em;
+}
+
+.form-container {
+    background-color: var(--cor-de-fundo-secundaria);
+    margin: 1em 0em;
+    padding: 1em 1.5em;
+    border-radius: 7px;
+}
+
+.ninth-titulo  {
+    padding-bottom: 1em;
+}
+
+.ninth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.form-item {
+    width: 100%;
+    padding: 1em;
+    background-color: transparent;
+    border: 0.5px solid var(--branco);
+    border-radius: 100px;
+}
+
+.form-item::placeholder {
+    color: #000;
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+}
+
+.form-item-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    width: 107%;
+}
+
+.item-mensage {
+    padding-bottom: 4em;
+    border-radius: 10px;
+}
+
+.ninth-botao {
+    all: unset;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 0.625em;
+    color: var(--branco);
+    background-color: var(--vinho);
+    border-radius: 25px;
+    padding: 1em;
+    width: 50%;
+}
+
+/* Décima sessão */
+
+.tenth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: #7B305C;
+    font-size: 1em;
+}
+
+.tenth-container {
+    display: flex;
+    align-items: center;
+    gap: 3.75em;
+}
+
+.tenth-container a {
+    text-decoration: none;
+    color: var(--vinho);
+}
+
+.tenth-contain {
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+}
+
+.localizacao__mapa {
+    width: 100%;
+    height: 15em;
+}
+
+.link-wpp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.link-wpp img {
+    width: 40px;
+}
+
+.rodape {
+    padding: 1em 0.5em;
+    background-color: #000;
+    color: var(--branco);
+    display: flex;
+    text-align: left;
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
+    align-items: flex-start;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.rodape-texto {
+    width: 60%;
+}
+
+.rodape-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape-link {
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.git {
+    width: 20px;
 }
