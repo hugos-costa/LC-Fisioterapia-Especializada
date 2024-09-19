@@ -1,28 +1,57 @@
-$(document).ready(function(){
-    $('.seventh-carousel').slick({
-        infinite: true,
-        slidesToShow: 1, // Exibe 1 slide por vez em telas menores
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 1366, // Para telas menores que 1366px
-                settings: {
-                    slidesToShow: 1, // Continua mostrando 1 slide por vez
-                }
-            },
-            {
-                breakpoint: 9999, // Para telas maiores ou iguais a 1366px
-                settings: {
-                    slidesToShow: 3, // Exibe 3 slides por vez
-                }
+$('.seventh-carousel').slick({
+    infinite: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3,
             }
-        ]
-    });
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
 });
+
+// $(document).ready(function(){
+//     $('.seventh-carousel').slick({
+//         
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 5000,
+//         dots: true,
+
+//         responsive: [
+//             {
+//                 breakpoint: 1366,
+//                 settings: {
+//                     slidesToShow: 1,
+//                 }
+//             },
+//             {
+//                 breakpoint: 9999,
+//                 settings: {
+//                     slidesToShow: 3,
+//                 }
+//             }
+//         ]
+//     });
+// });
 
 
 

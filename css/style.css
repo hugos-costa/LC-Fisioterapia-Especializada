@@ -1,16 +1,16 @@
 :root {
-    --cor-de-fundo-primaria: #C7D7C0;
-    --cor-de-fundo-secundaria: #8BB081;
+    --cor-de-fundo-primaria: #fffcf5;
+    --cor-de-fundo-secundaria: #c7d7c0;
     --branco: #FFFFFF;
-    --vinho: #7B305C;
-    --verde: #316624;
-    --fonte-primaria: "Libre Baskerville", serif;
-    --fonte-secundaria: "Hanken Grotesk", sans-serif;
+    --rosa: #d9a090;
+    --verde: #8bb081;
+    --verde-texto: #316624;
 }
 
 body {
     background-color: var(--cor-de-fundo-primaria);
-    font-family: var(--fonte-primaria);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -34,11 +34,14 @@ body {
     padding:  1.25em;
 }
 
+.home img {
+    width: 30%;
+}
+
 .home-titulo {
-    font-family: var(--fonte-secundaria);
     font-weight: 700;
     font-size: 1.5em;
-    color: var(--vinho);
+    color: var(--rosa);
     padding: 0.5em 0;
 }
 
@@ -48,8 +51,9 @@ body {
 
 .home-texto {
     font-size: 0.8em;
+    font-weight: 700;
     padding: 0 1em 2em 1em;
-    color: var(--vinho);
+    color: var(--verde);
 }
 
 .home-link,
@@ -59,7 +63,7 @@ body {
     text-align: center;
     font-size: 0.625em;
     color: var(--branco);
-    background-color: var(--vinho);
+    background-color: #c2858c;
     border-radius: 25px;
     padding: 1em;
     width: 30%;
@@ -80,10 +84,13 @@ body {
 .second-titulo {
     font-size: 1.5em;
     font-weight: 700;
-    font-family: var(--fonte-secundaria);
-    color: var(--vinho);
+    color: var(--verde-texto);
     padding: 0 1em 1em 1em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-2 {
+    color: var(--cor-de-fundo-primaria);
 }
 
 .second-container {
@@ -112,10 +119,9 @@ body {
 }
 
 .third-titulo {
-    font-family: var(--fonte-secundaria);
     font-size: 1.5em;
     font-weight: 700;
-    color: var(--verde);
+    color: var(--rosa);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -146,19 +152,18 @@ body {
     transform: translateX(-50%);
     height: 0.5px;
     width: 80%;
-    background-color: var(--verde);
+    background-color: var(--rosa);
 }
 
 .third-botao {
-    border: 0.5px solid var(--verde);
+    border: 0.5px solid var(--rosa);
     border-radius: 5px;
     padding: 0.5em;
     width: 45%;
     text-align: center;
-    font-family: var(--fonte-secundaria);
     font-size: 1.125em;
     font-weight: 700;
-    color: var(--vinho);
+    color: var(--rosa);
 }
 
 /* Quarta sessão */
@@ -179,10 +184,9 @@ body {
 .fourth-titulo,
 .sixth-titulo,
 .octave-titulo {
-    font-family: var(--fonte-secundaria);
     font-size: 1.5em;
     font-weight: 700;
-    color: var(--vinho);
+    color: var(--verde-texto);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -201,8 +205,7 @@ body {
 }
 
 .fourth-sumarios {
-    font-family: var(--fonte-secundaria);
-    color: var(--vinho);
+    color: var(--verde-texto);
     text-align: center;
     padding: 0.5em 0;
     list-style: none;
@@ -228,11 +231,10 @@ body {
 }
 
 .fifth-titulo {
-    font-family: var(--fonte-secundaria);
     font-weight: 700;
     font-size: 1.5em;
     padding: 0 3em;
-    color: var(--verde);
+    color: var(--rosa);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -265,8 +267,7 @@ body {
     display: flex;
     align-items: center;
     gap: 50px;
-    font-family: var(--fonte-secundaria);
-    color: var(--vinho);
+    color: var(--verde-texto);
     text-align: center;
     padding: 0.5em 0;
     list-style: none;
@@ -282,6 +283,7 @@ body {
 
 .sixth-icon {
     padding-left: 5px;
+    width: 30px;
 }
 
 /* Sétima sessão */
@@ -292,15 +294,17 @@ body {
 
 .seventh-titulo,
 .ninth-titulo {
-    font-family: var(--fonte-secundaria);
     font-weight: 700;
     font-size: 1.5em;
-    color: var(--verde);
+    color: var(--rosa);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+
+
 .seventh-carousel .seventh-container {
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo-secundaria);
+    border: 2px solid var(--rosa);
     margin: 1em;
     padding: 1em;
     border-radius: 15px;
@@ -334,6 +338,15 @@ body {
     width: 100px;
     margin: 0 auto;
 }
+
+.slick-prev:before {
+    color: var(--verde);
+}
+
+.slick-next::before {
+    color: var(--verde);
+}
+
 
 /* Oitava sessão */
 
@@ -381,6 +394,7 @@ body {
 
 .ninth-titulo  {
     padding-bottom: 1em;
+    color: #c2858c;
 }
 
 .ninth-form {
@@ -397,11 +411,11 @@ body {
     background-color: transparent;
     border: 0.5px solid var(--branco);
     border-radius: 100px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .form-item::placeholder {
     color: #000;
-    font-family: var(--fonte-secundaria);
     font-size: 1em;
 }
 
@@ -414,18 +428,18 @@ body {
 
 .item-mensage {
     padding-bottom: 4em;
-    border-radius: 10px;
+    border-radius: 10px; 
+    font-family: "Montserrat", sans-serif;
 }
 
 .ninth-botao {
     all: unset;
     text-transform: uppercase;
     text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-weight: 700;
-    font-size: 0.625em;
+    font-weight: 400;
+    font-size: 0.8em;
     color: var(--branco);
-    background-color: var(--vinho);
+    background-color: #c2858c;
     border-radius: 25px;
     padding: 1em;
     width: 50%;
@@ -439,9 +453,15 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    color: #7B305C;
+    color: var(--rosa);
     font-size: 1em;
 }
+
+
+.tenth-logo {
+    width: 20%;
+}
+
 
 .tenth-container {
     display: flex;
@@ -451,7 +471,7 @@ body {
 
 .tenth-container a {
     text-decoration: none;
-    color: var(--vinho);
+    color: var(--rosa);
 }
 
 .tenth-contain {
@@ -482,7 +502,6 @@ body {
     color: var(--branco);
     display: flex;
     text-align: left;
-    font-family: var(--fonte-secundaria);
     font-weight: 200;
     align-items: flex-start;
     gap: 1em;
@@ -521,10 +540,6 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1em;
-    }
-
-    .home img {
-        width: 200px;
     }
 
     .home-titulo {
@@ -574,10 +589,11 @@ body {
         /* width: 15%; */
         padding: 0 8em;
     }
+    
 
     .second-titulo,
     .fifth-titulo {
-        font-size: 2em;
+        font-size: 2.1em;
         text-align: left;
         padding: 0;
     }
@@ -589,6 +605,10 @@ body {
         text-align: left;
         padding: 0;
         width: 100%;
+    }
+
+    .fifth-texto {
+        width: 90%;
     }
 
     /* Terceira sessão */
@@ -631,6 +651,7 @@ body {
         width: 350px;
         font-size: 1.5em;
         padding: 1em 0;
+        border: 2px solid;
     }
 
     .bot {
@@ -675,13 +696,17 @@ body {
     .sixth-container h2 {
         font-weight: 700;
         font-size: 1.2em;
+        color: var(--verde-texto);
     }
 
     .fourth-container p,
-    .sixth-container {
+    .sixth-container p {
         font-size: 1em;
     }
 
+    .sixth-container p {
+        width: 170px;
+    }
     .fifth-imagem {
         width: 100%;
         height: 100%;
@@ -693,6 +718,10 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 10em;
+    }
+    
+    .fifth-titulo {
+        font-size: 2.5em;
     }
 
     .sixth-detalhe {
@@ -721,8 +750,8 @@ body {
         gap: 8px;
         width: 276px;
         height: 276px;
-        color: var(--verde);
-        border: 0.5px solid var(--verde);
+        border: 2px solid var(--rosa);
+        background-color: var(--cor-de-fundo-secundaria);
     }
     
     .octave-container {
@@ -737,7 +766,7 @@ body {
     }
 
     .octave-lista {
-        border: 0.5px solid var(--verde);
+        border: 2px solid var(--verde);
         border-radius: 25px;
         padding: 2em;
     }
@@ -754,7 +783,7 @@ body {
         gap: 1em;
         padding: 3em;
         text-decoration: none;
-        color: var(--vinho);
+        color: var(--rosa);
     }
 
     .contato-container {
